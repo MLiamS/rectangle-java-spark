@@ -25,4 +25,10 @@ public class RectangleTest {
     Rectangle testRectangle = new Rectangle(2,4);
     assertEquals(false, testRectangle.isSquare());
   }
+
+  @Test
+  public void newRectangle_isSquare_true() {
+    Rectangle testRectangle = new Rectangle(2,2);
+    assertEquals(true, testRectangle.isSquare());
+  }
 }
