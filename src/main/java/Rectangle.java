@@ -9,4 +9,8 @@ public class Rectangle {
     return mLength;
   }
 
+  public int getWidth() {
+    return 0;
+  }
+
 }
