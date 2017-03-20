@@ -1,0 +1,23 @@
+<form action="#">
+  <label for="side1">Enter the first side:</label>
+  <input id="side1" name="side1" type="text" required>
+  <label for="side2">Enter the second side:</label>
+  <input id="side2" name="side2" type="text" required>
+  <button type="submit" name="button">Give me dem sides!</button>
+</form>
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-4">
+    <h2>These are your rectangles:</h2>
+    #foreach ($rectangle in $rectangles)
+    <p><h3>Your rectangle's length is $rectangle.getLength()</h3></p>
+    <p><h3>Your rectangle's width is $rectangle.getWidth()</h3></p>
+      #if ($rectangle.isSquare())
+        <p><h3>Your rectangle is a square!</h3></p>
+        #else
+        <p><h3>Your rectangle isn't a square!</h3></p>
+      #end
+    #end
+  </div>
+</div>
